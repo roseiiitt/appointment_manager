@@ -1,0 +1,123 @@
+
+  /* for page */
+  /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  /* Input group */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Error messages */
+  .error-message {
+    color: #e74c3c;
+    margin-top: 5px;
+  }
+  
+  .error {
+    border-color: #e74c3c;
+  }
+  
+  /* Success messages */
+  .success {
+    border-color: #2ecc71;
+  }
+  
+  /* Additional styles for a doctor and patient theme */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg') no-repeat center center / cover;
+    opacity: 0.1;
+    z-index: -1;
+  }
+  
+  h1::after {
+    content: "🩺";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  input, select {
+    background-color: #ecf0f1;
+  }
+  
+  input::placeholder {
+    color: #15c9d6;
+  }
+  
+  select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%233498db" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    padding-right: 30px;
+  }  

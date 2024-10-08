@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Space around the container */
+    padding: 40px; /* Increased padding */
+    background: white;
+    border-radius: 120px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #007BFF; /* Set color for H2 elements */
+    border-bottom: 2px solid #007BFF; /* Bottom border for emphasis */
+    padding-bottom: 10px;
+}
+
+.profile-pic {
+    width: 100px;  /* Set width */
+    height: 100px; /* Set height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensure image covers the container */
+    margin: 15px auto; /* Space below the image */
+    display: block; /* Center the image */
+    border: 2px solid #007BFF; /* Border around the image */
+}
+
+p {
+    margin: 15px 0 25px; /* Added bottom margin */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 5px;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center text in links */
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Space above the footer */
+    padding: 20px 0; /* Vertical padding inside footer */
+    background-color: #007BFF; /* Footer background */
+    color: white; /* Text color inside footer */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding */
+    }
+    .profile-pic {
+        width: 80px;  /* Smaller width on mobile */
+        height: 80px; /* Smaller height on mobile */
+    }
+    h1, h2, p {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+
+
